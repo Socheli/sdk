@@ -1,0 +1,51 @@
+{
+  "name": "@socheli/sdk",
+  "version": "0.1.0",
+  "description": "Official TypeScript SDK for the Socheli content engine API.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "keywords": [
+    "socheli",
+    "sdk",
+    "content",
+    "video",
+    "ai"
+  ],
+  "license": "MIT",
+  "module": "dist/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "@types/node": "^22"
+  },
+  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Socheli/sdk.git"
+  },
+  "homepage": "https://github.com/Socheli/sdk#readme",
+  "bugs": {
+    "url": "https://github.com/Socheli/sdk/issues"
+  },
+  "author": "Socheli <contact@socheli.com> (https://socheli.com)",
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
